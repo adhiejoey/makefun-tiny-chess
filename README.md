@@ -36,17 +36,14 @@ Elo is the make.fun performance rating: the rating R whose expected
 scores against the gauntlet anchors (depth-2 855, depth-3 1073,
 depth-4 1199, nodes-100k 1392, nodes-250k 1497, nodes-500k 1596,
 nodes-1M 1667, nodes-2M 1712) sum to the points scored, floored at 0
-and capped at 2,112. Measured locally with the kit's own env server
-and scorer (`program/env/server.mjs`, `program/scorer/score.mjs`)
-on a practice trial, using the kit's own env server and scorer
-(`program/env/server.mjs`, `program/scorer/score.mjs`). Measured
-locally on the kit's practice trials (6 games each, first six
-gauntlet rungs): final engine trial-0 Elo 1,279 (3W 0D 3L, 3.0 pts,
-spare plies 304), trial-1 Elo 1,364 (3W 1D 2L, 3.5 pts, measured
-before the repetition change); mean about 1,322. The packed
-`main.py` reproduces the source engine's trial-0 transcript
-exactly (same Elo 1,279). Practice gate for the final is 1,154;
-a prize also needs a mean Elo above the sunfish house baseline.
+and capped at 2,112. Measured locally on the kit's practice trials
+(6 games each, first six gauntlet rungs): final engine trial-0 Elo
+1,279 (3W 0D 3L, 3.0 pts, spare plies 304), trial-1 Elo 1,364
+(3W 1D 2L, 3.5 pts, measured before the repetition change); mean
+about 1,322. The packed `main.py` reproduces the source engine's
+trial-0 transcript exactly (same Elo 1,279). Practice gate for the
+final is 1,154; a prize also needs a mean Elo above the sunfish
+house baseline.
 
 ## Test locally
 
